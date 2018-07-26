@@ -31,9 +31,7 @@ var app = new Vue({
 		}
 
 		// timeSinceLogin: function(){
-		// 	this.interval = setInterval(() => {
-		// 		let timestamp = this.timestamp
-		// 	}, 1000)
+
 		// }
 	}
 });

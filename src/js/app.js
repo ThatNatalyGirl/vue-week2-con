@@ -16,6 +16,7 @@ var app = new Vue({
 				// timestamp: new Date().getTime(),
 				checkin: moment(this.timestamp).format("MMM Do hh:mm:ss a"),
 				//https://momentjs.com/
+
 			}
 			//clear the data from the input field
 			this.newName = ''
@@ -29,9 +30,7 @@ var app = new Vue({
 		},
 			
 		// timeSinceLogin: function(){
-		// 	this.interval = setInterval(() => {
-		// 		let timestamp = this.timestamp
-		// 	}, 1000)
+	
 		// }
 	}
 })
