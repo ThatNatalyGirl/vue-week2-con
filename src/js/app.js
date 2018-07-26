@@ -25,7 +25,7 @@ var app = new Vue({
 			this.people.push(newPerson)
 
 			if (this.people.length > 8){
-				this.people.splice(this.index, 1)
+				this.people.shift()
 			}
 		},
 			
