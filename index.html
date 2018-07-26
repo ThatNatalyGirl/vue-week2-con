@@ -16,7 +16,7 @@
 		<div id="app">
 			<h1>Welcome to SushiCon!</h1>
 			<h2>Check in</h2>
-			<input v-model="newName" placeholder="name">
+			<input ref="name" v-model="newName" placeholder="name">
 			<input v-on:keyup.enter="addPerson" v-model="newEmail" placeholder="email">
 			<button v-on:click="addPerson">Register</button>
 			<ul>
@@ -25,6 +25,7 @@
 					<h3>{{person.name}}</h3>
 					<p>{{person.email}}</p>
 					<p>{{person.checkin}}</p>
+					<p>{{person.timeSinceCheckin}} minute<span v-if="person.timeSinceCheckin !=1">s</span> ago</p>
 				</li>
 			</ul>
 		</div>
