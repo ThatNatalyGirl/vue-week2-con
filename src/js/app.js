@@ -14,9 +14,8 @@ var app = new Vue({
 				name: this.newName,
 				email: this.newEmail,
 				// timestamp: new Date().getTime(),
-				timestamp: new Date().getTime(),
 				checkin: moment(this.timestamp).format("MMM Do hh:mm:ss a"),
-				lapsedtime: this.sinceTime()
+				//https://momentjs.com/
 			}
 			//clear the data from the input field
 			this.newName = ''
@@ -29,12 +28,11 @@ var app = new Vue({
 			}
 		},
 			
-		sinceTime: function(){
-			this.interval = setInterval(() => {
-				let timestamp = this.timestamp
-				console.log(`hello`)
-			}, 1000)
-		}
+		// timeSinceLogin: function(){
+		// 	this.interval = setInterval(() => {
+		// 		let timestamp = this.timestamp
+		// 	}, 1000)
+		// }
 	}
 })
 

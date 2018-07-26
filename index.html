@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>AcronumCon Check In</title>
+		<title>SushiCon Check In</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,14 +17,14 @@
 			<h1>Welcome to SushiCon!</h1>
 			<h2>Check in</h2>
 			<input v-model="newName" placeholder="name">
-			<input id="email" v-model="newEmail" placeholder="email">
-			<button id="button" v-on:click="addPerson">Register</button>
+			<input v-on:keyup.enter="addPerson" v-model="newEmail" placeholder="email">
+			<button v-on:click="addPerson">Register</button>
 			<ul>
 				<li v-for="person in people">
 					<img v-bind:src="person.image">
 					<h3>{{person.name}}</h3>
 					<p>{{person.email}}</p>
-					<p>{{person.timestamp}}</p>
+					<p>{{person.checkin}}</p>
 				</li>
 			</ul>
 		</div>
