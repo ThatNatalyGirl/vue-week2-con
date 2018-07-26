@@ -11,8 +11,9 @@ html, body{
 }
 
 body{
-	background:white;
-	font-family: Helvetica, Arial, sans-serif;
+	background: url(../img/bg.jpg) no-repeat right bottom;
+	background-size: cover;
+	font-family: 'Merienda', cursive;
 	border: 3vw solid black;
 	padding: 3vw;
 }
@@ -21,6 +22,9 @@ h1{
 	font-size: 7vw;
 	font-weight: bold;
 	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0,0,0,1), 3px 3px 5px #000;
+	font-family: 'Hanalei Fill', cursive;
 }
 
 ul{
@@ -28,20 +32,33 @@ ul{
 	flex-wrap: wrap;
 	// justify-content: space-between;
 	align-content: flex-start;
+
 	li{
 		text-align: center;
 		width: 250px;
-		border: 1px solid #999;
-		border-radius: 10px;
+		border: 3px solid #000;
+		border-radius: 100px;
 		padding: 10px;
 		margin: 10px 0;
-		h3{
-			font-size: 18pt;
-			font-weight: bold;
+		background: rgba(255, 255, 255, 0.5);
+
+		img{
+			border-radius: 40px;
 		}
+
+		h3{
+			font-size: 20pt;
+			font-weight: bold;
+			color: #fff;
+			text-shadow: 0 0 10px rgba(0,0,0,1), 3px 3px 5px #000;
+			padding: 10px 0;
+		}
+
 		p{
 			font-size: 12pt;
-			color: #999;
+			color: orange;
+			text-shadow: 0 0 10px rgba(0,0,0,1), 3px 3px 5px #000;
+
 		}
 	}
 }
@@ -49,10 +66,33 @@ ul{
 
 h2{
 	font-size: 4vw;
-	margin-top: 100px;
+	margin: 60px 0 10px;
+	color: #fff;
+	text-shadow: 0 0 10px rgba(0,0,0,1), 3px 3px 5px #000;	
 }
 
 input{
 	font-size: 15pt;
 	padding: 5px 8px;
+	font-family: 'Merienda', cursive;
+	margin-right: 1%;
+	border: 3px solid #000;
+	border-radius: 50px;
+}
+
+button{
+	font-family: 'Merienda', cursive;
+	background: #fff;
+	border-radius: 100px;
+	font-size: 2vw;
+	text-shadow: 0 0 1px rgba(0,0,0,1), 1px 1px 5px #db971a;	
+	height: 100px;
+	transition: .9s;
+	border: 3px solid #000;
+
+	&:hover{
+		background: #db971a;
+		text-shadow: 0 0 1px rgba(0,0,0,1), 1px 1px 5px #fff;
+		transition: .9s;
+	}
 }

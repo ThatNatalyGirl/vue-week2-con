@@ -25,15 +25,11 @@ var app = new Vue({
 			//adds the new person typed in to the people array
 			this.people.push(newPerson);
 
-			if (this.people.length > 2) {
+			if (this.people.length > 8) {
 				this.people.splice(this.index, 1);
 			}
-			this.setFocus();
 		},
 
-		setFocus: function setFocus() {
-			this.$refs.name.focus();
-		},
 		sinceTime: function sinceTime() {
 			var _this = this;
 
