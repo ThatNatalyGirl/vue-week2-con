@@ -1,0 +1,58 @@
+Vue week3
+
+Component:
+
+A component is anything - and html element can be made into a component and then can be reuseable
+
+A module is a component
+
+A todo item was a component
+	-it had some data
+	-managed it's own DOM stuff
+	-it was a component that lived inside another components
+
+	ITS LIKE A RUSSIAN DOLL
+
+		-little components inside of bigger components inside of a giant component
+
+The beauty of the component is 
+	-type field can have something special about it 
+		-a special feature
+	-You don't have to remember how you did it. 
+	-You can just use it over and over again
+
+Take Facebook for instance**
+					-The center feed is one component
+					-Each post is one component
+					-If it's different people they can trust the person wrote it right and just use it
+					-There's more components
+						-the like component
+						-the comment component 
+						-etc
+
+https://vuejs.org/v2/guide/components.html
+
+with a component you don't put anything in the html 
+the html stuff goes in the template	
+	- you name it and then you put it in the file when you have one
+
+```````````````````````````````````
+
+
+
+Starting out
+
+<div id="app">
+	{{message}}
+</div>
+`````````````````````````
+var app = new Vue({
+	el: "#app",
+	data: {
+		message: 'hello vue'
+	}
+})
+
+
+data goes down
+events go up
